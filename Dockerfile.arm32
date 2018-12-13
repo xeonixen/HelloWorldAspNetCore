@@ -1,4 +1,4 @@
-FROM gcr.io/google-appengine/aspnetcore:2.1
+FROM microsoft/dotnet:2.1-aspnetcore-runtime-stretch-slim-arm32v7
 ADD ./bin/Release/netcoreapp2.1/publish/ /app
 ENV ASPNETCORE_URLS=http://*:${PORT}
 WORKDIR /app
